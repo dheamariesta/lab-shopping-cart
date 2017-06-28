@@ -13,8 +13,197 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+
+    <title>Shopping Cart</title>
   </head>
   <body>
-    
+
+    <div class="row" id="headline">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-10">
+        <h1>Shopping Cart</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="productName col-md-3">
+            Salmon
+          </div>
+          <div class="productPrice col-md-3">
+            $60.00
+          </div>
+          <div class=" col-md-4">
+            <label>QTY</label>
+            <input type="text" value="0" class="quantity"/>
+            <input type="reset" value="Cancel" />
+          </div>
+          <div class="subtotal col-md-2">
+            $0.00
+          </div>
+        </div>
+        <div class="row">
+          <div class="productName col-md-3">
+            Tuna
+          </div>
+          <div class="productPrice col-md-3">
+            $50.00
+          </div>
+          <div class=" col-md-4">
+            <label>QTY</label>
+            <input type="text" value="0" class="quantity"/>
+            <input type="reset" value="Cancel" class="cancel" />
+          </div>
+          <div class="subtotal col-md-2">
+            $0.00
+          </div>
+        </div>
+        <div class="row">
+          <div class="productName col-md-3">
+            Carp
+          </div>
+          <div class="productPrice col-md-3">
+            $40.00
+          </div>
+          <div class=" col-md-4">
+            <label>QTY</label>
+            <input type="text" value="0" class="quantity"/>
+            <input type="reset" value="Cancel" class="cancel"/>
+          </div>
+          <div class="subtotal col-md-2">
+            $0.00
+          </div>
+        </div>
+        <div class="row">
+          <div class="productName col-md-3">
+            Pork
+          </div>
+          <div class="productPrice col-md-3">
+            $50.00
+          </div>
+          <div class=" col-md-4">
+            <label>QTY</label>
+            <input type="text" value="0" class="quantity"/>
+            <input type="reset" value="Cancel" class="cancel"/>
+          </div>
+          <div class="subtotal col-md-2">
+            $0.00
+          </div>
+        </div>
+        <div class="row">
+          <div class="productName col-md-3">
+            Beef
+          </div>
+          <div class="productPrice col-md-3">
+            $40.00
+          </div>
+          <div class=" col-md-4">
+            <label>QTY</label>
+            <input type="text" value="0" class="quantity"/>
+            <input type="reset" value="Cancel" class="cancel"/>
+          </div>
+          <div class="subtotal col-md-2">
+            $0.00
+          </div>
+        </div>
+        <div class="row">
+          <div class="productName col-md-3">
+            Chicken
+          </div>
+          <div class="productPrice col-md-3">
+            $25.00
+          </div>
+          <div class=" col-md-4">
+            <label>QTY</label>
+            <input type="text" value="0" class="quantity"/>
+            <input type="reset" value="Cancel" class="cancel"/>
+          </div>
+          <div class="subtotal col-md-2">
+            $0.00
+          </div>
+        </div>
+        <div class="row">
+          <div class="productName col-md-3">
+            Cereal
+          </div>
+          <div class="productPrice col-md-3">
+            $45.00
+          </div>
+          <div class=" col-md-4">
+            <label>QTY</label>
+            <input type="text" value="0" class="quantity"/>
+            <input type="reset" value="Cancel" class="cancel"/>
+          </div>
+          <div class="subtotal col-md-2">
+            $0.00
+          </div>
+        </div>
+        <div class="row">
+          <div class="productName col-md-3">
+            Milk
+          </div>
+          <div class="productPrice col-md-3">
+            $20.00
+          </div>
+          <div class=" col-md-4">
+            <label>QTY</label>
+            <input type="text" value="0" class="quantity"/>
+            <input type="reset" value="Cancel" class="cancel" />
+          </div>
+          <div class="subtotal col-md-2">
+            $0.00
+          </div>
+        </div>
+        <div class="row">
+          <div class="productName col-md-3">
+            Sugar
+          </div>
+          <div class="productPrice col-md-3">
+            $10.00
+          </div>
+          <div class=" col-md-4">
+            <label>QTY</label>
+            <input type="text" value="0" class="quantity"/>
+            <input type="reset" value="Cancel" class="cancel"/>
+          </div>
+          <div class="subtotal col-md-2">
+            $0.00
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <input type="text" placeholder="Enter product" id = "new-item-name"/>
+          </div>
+          <div class="col-md-3">
+            <input type="text" placeholder="Enter price" id = "new-item-unit-price" />
+          </div>
+          <div class="col-md-4">
+            <input type="submit" value="Create" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-9"></div>
+      <div class="col-md-2">
+        <button type="button" class="btn btn-success" id = "calculatePriceButton">Calculate Price</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h1>Total Price:</h1>
+        <h1 id = "total-price">$0.00</h1>
+      </div>
+    </div>
+
+
+
   </body>
 </html>

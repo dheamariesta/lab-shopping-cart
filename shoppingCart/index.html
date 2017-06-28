@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The amazing shopping cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- Local style -->
+    <link href="style.css" rel="stylesheet" media="screen">
+
+  </head>
+  <body>
+
+    <div class="container">
+        <header class="row header">
+          <h1>WDI Shop</h1>
+        </header>
+        <section class="row" id="cart">
+          <div class="col-md-12">
+
+              <!-- product row -->
+              <div class="row product">
+                  <div class="col-md-3 title">
+                    Salmon
+                  </div>
+                  <div class="col-md-3 price">
+                    $60.01
+                  </div>
+                  <div class="col-md-3 qtr">
+                    <input type="number" name="quantity" min="0" max="50" value="0"/>
+                  </div>
+                  <div class="col-md-1 subtotal">
+                    $0.00
+                  </div>
+                  <div class="col-md-2 delete">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+              </div>
+
+              <!-- product row -->
+              <div class="row product">
+                  <div class="col-md-3 title">
+                    Salmon
+                  </div>
+                  <div class="col-md-3 price">
+                    $60.00
+                  </div>
+                  <div class="col-md-3 qtr">
+                    <input type="number" name="quantity" min="0" max="50" value="0"/>
+                  </div>
+                  <div class="col-md-1 subtotal">
+                    $0.00
+                  </div>
+                  <div class="col-md-2 delete">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+              </div>
+
+              <!-- product row -->
+              <div class="row product">
+                  <div class="col-md-3 title">
+                    Salmon
+                  </div>
+                  <div class="col-md-3 price">
+                    $60.00
+                  </div>
+                  <div class="col-md-3 qtr">
+                    <input type="number" name="quantity" min="0" max="50" value="0" />
+                  </div>
+                  <div class="col-md-1 subtotal">
+                    $0.00
+                  </div>
+                  <div class="col-md-2 delete">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+              </div>
+
+              <!-- product row -->
+              <div class="row product">
+                  <div class="col-md-3 title">
+                    Salmon
+                  </div>
+                  <div class="col-md-3 price">
+                    $60.00
+                  </div>
+                  <div class="col-md-3 qtr">
+                    <input type="number" name="quantity" min="0" max="50" value="0"/>
+                  </div>
+                  <div class="col-md-1 subtotal">
+                    $0.00
+                  </div>
+                  <div class="col-md-2 delete">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+              </div>
+
+              <!-- product row -->
+              <div class="row product">
+                  <div class="col-md-3 title">
+                    Salmon
+                  </div>
+                  <div class="col-md-3 price">
+                    $60.00
+                  </div>
+                  <div class="col-md-3 qtr">
+                    <input type="number" name="quantity" min="0" max="50" value="0"/>
+                  </div>
+                  <div class="col-md-1 subtotal">
+                    $0.00
+                  </div>
+                  <div class="col-md-2 delete">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+              </div>
+
+              <!-- product row -->
+              <div class="row product">
+                  <div class="col-md-3 title">
+                    Salmon
+                  </div>
+                  <div class="col-md-3 price">
+                    $60.00
+                  </div>
+                  <div class="col-md-3 qtr">
+                    <input type="number" name="quantity" min="0" max="50" value="0"/>
+                  </div>
+                  <div class="col-md-1 subtotal">
+                    $0.00
+                  </div>
+                  <div class="col-md-2 delete">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+              </div>
+
+              <div class="row product">
+                  <div class="col-md-3 title">
+                    <input type="text" value="candy" />
+                  </div>
+                  <div class="col-md-3 price">
+                    <input type="text" value = "10" />
+                  </div>
+                  <div class="col-md-2 id">
+                    <input type="number" placeholder="id"/>
+                  </div>
+                  <div class="col-md-2 color">
+                    <input type="text" placeholder="color"/>
+                  </div>
+
+                  <div class="col-md-1 delete">
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </div>
+                  <div class="col-md-1 okay">
+                    <button type="button" class="btn btn-success">Update</button>
+                  </div>
+              </div>
+
+
+          </div>
+        </section>
+        <section class="row create">
+          <div class="col-md-2 name">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name" class="form-control" />
+            </div>
+          </div>
+          <div class="col-md-2 price">
+            <div class="form-group">
+              <input type="number" name="price" min="0" placeholder="Price" class="form-control" />
+            </div>
+          </div>
+          <div class="col-md-2 createProduct">
+            <button type="button" class="btn btn-success">Create</button>
+          </div>
+          <div class="col-md-2 col-md-offset-4 calc">
+            <button type="button" class="btn btn-info">Calculate</button>
+          </div>
+
+        </section>
+        <section class="row total">
+          <h1>Total: <br/> $<span id="grandTotal">00.00</span></h1>
+        </section>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <!-- Local script -->
+    <script src="script.js"></script>
+
+    <!-- template -->
+    <script type="text/template" id="productRowTpl">
+      <div class="row product">
+          <div class="col-md-3 title">
+            {{Name}}
+          </div>
+          <div class="col-md-3 price">
+            ${{Price}}
+          </div>
+          <div class="col-md-3 qtr">
+            <input type="number" name="quantity" min="0" max="50" value="0"/>
+          </div>
+          <div class="col-md-1 subtotal">
+            $0.00
+          </div>
+          <div class="col-md-2 delete">
+            <button type="button" class="btn btn-danger">Delete</button>
+          </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="productRowUpdate">
+      <div class="row product">
+          <div class="col-md-3 title">
+            <input type="text" value="candy" />
+          </div>
+          <div class="col-md-3 price">
+            <input type="text" value = "10" />
+          </div>
+          <div class="col-md-2 id">
+            <input type="number" placeholder="id"/>
+          </div>
+          <div class="col-md-2 color">
+            <input type="text" placeholder="color"/>
+          </div>
+
+          <div class="col-md-1 delete">
+            <button type="button" class="btn btn-danger">Delete</button>
+          </div>
+          <div class="col-md-1 okay">
+            <button type="button" class="btn btn-success">Update</button>
+          </div>
+      </div>
+    </script>
+
+
+  </body>
+</html>
